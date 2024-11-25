@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 
 var serializer = new CsvSerializer();
@@ -20,7 +20,7 @@ Console.WriteLine($"Custom serialization time: {stopwatch.ElapsedMilliseconds} m
 stopwatch.Restart();
 for (int i = 0; i < iterations; i++)
 {
-    var json = JsonSerializer.Serialize(testObject);
+    var json = System.Text.Json.JsonSerializer.Serialize(testObject);
 }
 stopwatch.Stop();
 Console.WriteLine($"JSON serialization time: {stopwatch.ElapsedMilliseconds} ms");
@@ -42,12 +42,23 @@ stopwatch.Stop();
 Console.WriteLine($"Custom deserialization time: {stopwatch.ElapsedMilliseconds} ms");
 
 // Стандартная JSON десериализация
-var jsonString = JsonSerializer.Serialize(testObject);
+var jsonString = System.Text.Json.JsonSerializer.Serialize(testObject);
 stopwatch.Restart();
 for (int i = 0; i < iterations; i++)
 {
-    var deserializedObject = JsonSerializer.Deserialize<F>(jsonString);
+    var deserializedObject = System.Text.Json.JsonSerializer.Deserialize<F>(jsonString);
 }
 stopwatch.Stop();
 Console.WriteLine($"JSON deserialization time: {stopwatch.ElapsedMilliseconds} ms");
 
+// Код сериализации
+stopwatch.Restart();
+string jsonSerialized = JsonConvert.SerializeObject(testObject);
+stopwatch.Stop();
+Console.WriteLine($"Newtonsoft.Json Сериализация: {stopwatch.ElapsedMilliseconds} мс");
+
+// Код десериализации
+stopwatch.Restart();
+F deserializedObjectJson = JsonConvert.DeserializeObject<F>(jsonSerialized);
+stopwatch.Stop();
+Console.WriteLine($"Newtonsoft.Json Десериализация: {stopwatch.ElapsedMilliseconds} мс");
