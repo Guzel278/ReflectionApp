@@ -1,0 +1,14 @@
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/bin/Debug/net8.0/ReflectionApp
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/bin/Debug/net8.0/ReflectionApp.deps.json
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/bin/Debug/net8.0/ReflectionApp.runtimeconfig.json
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/bin/Debug/net8.0/ReflectionApp.dll
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/bin/Debug/net8.0/ReflectionApp.pdb
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.AssemblyInfoInputs.cache
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.AssemblyInfo.cs
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.csproj.CoreCompileInputs.cache
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.dll
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/refint/ReflectionApp.dll
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.pdb
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ReflectionApp.genruntimeconfig.cache
+/Users/guzelganieva/Projects/ReflectionApp/ReflectionApp/obj/Debug/net8.0/ref/ReflectionApp.dll
